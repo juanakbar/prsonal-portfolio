@@ -3,16 +3,16 @@ import React from 'react'
 export default function Social() {
     return (
         <div className='home__social'>
-            <a href='#' target='_blank' rel='noreferrer' className='home__social-icon'>
+            <a href='https://twitter.com/IndrianJuan' target='_blank' rel='noreferrer' className='home__social-icon'>
                 <i className='uil uil-twitter'></i>
             </a>
-            <a href='#' target='_blank' rel='noreferrer' className='home__social-icon'>
+            <a href='https://www.instagram.com/juanakbarr1/' target='_blank' rel='noreferrer' className='home__social-icon'>
                 <i className='uil uil-instagram'></i>
             </a>
-            <a href='#' target='_blank' rel='noreferrer' className='home__social-icon'>
+            <a href='https://github.com/juanakbar' target='_blank' rel='noreferrer' className='home__social-icon'>
                 <i className='uil uil-github'></i>
             </a>
-            <a href='#' target='_blank' rel='noreferrer' className='home__social-icon'>
+            <a href='https://www.showwcase.com/xavier10' target='_blank' rel='noreferrer' className='home__social-icon'>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="15"
