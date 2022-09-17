@@ -2,7 +2,7 @@ import React from 'react'
 import { Data } from './Data'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination } from 'swiper'
+import { Pagination, Autoplay } from 'swiper'
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/pagination"
@@ -19,6 +19,10 @@ export default function Testimonial() {
                 <div className='testimonial__container container '>
                     <Swiper className='testimonial__content'
                         loop={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                         spaceBetween={24}
                         pagination={{
                             clickable: true,
@@ -32,7 +36,7 @@ export default function Testimonial() {
                                 spaceBetween: 48,
                             },
                         }}
-                        modules={[Pagination]}>
+                        modules={[Pagination, Autoplay]}>
                         {Data.map(({ id, image, title, description }) => {
                             return (
                                 <SwiperSlide className="testimonial__card" key={id}>
